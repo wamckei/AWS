@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "AllowUserAccess",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::677276109736:user/wamckei"
+        },
+        "Action": [
+          "s3:ListBucket",
+          "s3:GetObject",
+          "s3:PutObject"
+        ],
+        "Resource": [
+          "arn:aws:s3:::wamckei04-18-2025-pc-backup",
+          "arn:aws:s3:::wamckei04-18-2025-pc-backup/*"
+        ]
+      }
+    ]
+  }
